@@ -1,14 +1,1 @@
-# Informe-Laboratorio-RS232
-import machine
-import utime
-from machine import Pin , UART
-
-led = machine . Pin ("LED ", machine . Pin . OUT )
-uart = UART (0 , baudrate =9600 , bits =8 , parity =0 , tx = Pin (0) , rx = Pin (1) )
-
-while True :
-led . on ()
-uart . write ("U")
-utime . sleep (1)
-led . off ()
-utime . sleep (1)
+Laboratorio de comunicación serial RS232/UART con Raspberry Pi Pico 2W, análisis de tramas, medición de tiempos de bit y transferencia de datos mediante comunicación half-duplex.
